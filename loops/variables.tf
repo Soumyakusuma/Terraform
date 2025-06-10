@@ -55,11 +55,11 @@ variable "instances"{
 }
 
 variable "zone_id"{
-  default=Z03148573A2NAXD6GP1WZ
+  default= "Z03148573A2NAXD6GP1WZ"
 }
 
 variable "domain_name"{
-  default=pract.site
+  default="pract.site"
 
 }
 
