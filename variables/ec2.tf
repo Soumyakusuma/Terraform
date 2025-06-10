@@ -13,7 +13,7 @@ resource "aws_security_group" "allow_all_ips" {
   description = var.sg.describe
 
    ingress {
-    from_port        =var.from_port
+    from_port        =var.from
     to_port          = var.to_port
     protocol         = "-1"
     cidr_blocks      = var.cidr
