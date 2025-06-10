@@ -1,11 +1,11 @@
 
 
 resource "aws_instance" "roboshop" {
-  ami           = var.ami_id
+  ami           = var.ami-id
   instance_type = "var.instance"
   vpc_security_group_ids = [ aws_security_group.allow_all_ips.id ]
   
-  tags = var.ec2_tags
+  tags = var.ec2-tags
 }
 
 resource "aws_security_group" "allow_all_ips" {
