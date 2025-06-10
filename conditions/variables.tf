@@ -5,9 +5,9 @@ variable "ami-id" {
 }
 
 
-variable "instance" {
-  default = "t3.micro"
-}
+#variable "instance" {
+  #default = "t3.micro"
+#}
 
 
 variable "ec2-tags" {
