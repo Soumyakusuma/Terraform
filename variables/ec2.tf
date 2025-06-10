@@ -3,17 +3,17 @@
 resource "aws_instance" "roboshop" {
   ami           = var.ami-id
   instance_type = "var.instance"
-  vpc_security_group_ids = [ aws_security_group.allow_all_ips.id ]
+  vpc_security_group_ids = [ aws_security_group.allow_all.id ]
   
   tags = var.ec2-tags
 }
 
-resource "aws_security_group" "allow_all_ips" {
+resource "aws_security_group" "allow_all" {
   name        = var.sg_allow
   description = var.describe
 
    ingress {
-    from_port        =var.from_port
+    from_port        = var.from_port
     to_port          = var.to_port
     protocol         = "-1"
     cidr_blocks      = var.cidr
