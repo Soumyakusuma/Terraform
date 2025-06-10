@@ -4,9 +4,11 @@ variable "ami-id" {
   description = "AMI ID Creation"
 }
 
+
 variable "instance" {
-default =  "ami-09c813fb71547fc4f"
+  default = "t3.micro"
 }
+
 
 variable "ec2-tags" {
   type=map(string)
