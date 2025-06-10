@@ -47,7 +47,7 @@ variable "sg-tags" {
 }
 
 variable "type_of_env"{
-  default="dev"
+  default="prod"
 }
 
 
