@@ -2,7 +2,7 @@
 
 resource "aws_instance" "roboshop" {
   count=4
-  for each =toset(var.instances)
+  for each = toset(var.instances)
   ami = var.ami-id
   instance_type = each.value
   vpc_security_group_ids = [ aws_security_group.allow_all.id ]
