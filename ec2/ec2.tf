@@ -19,6 +19,6 @@ resource "aws_security_group" "allow_all_ips" {
   }
 
   tags = {
-    Name = "allow_tls"
+    Name = "allow_all_ips"
   }
 }
