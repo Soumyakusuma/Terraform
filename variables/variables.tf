@@ -1,7 +1,7 @@
 variable "ami-id" {
   type    = string
   default =  "ami-09c813fb71547fc4f"
-  descriiption = "AMI ID Creation"
+  description = "AMI ID Creation"
 }
 
 variable "instance" {
