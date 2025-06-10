@@ -6,7 +6,9 @@ resource "aws_instance" "roboshop" {
   instance_type = var.type_of_env == "dev" ? "t3.micro" : "t3.small"
   vpc_security_group_ids = [ aws_security_group.allow_all.id ]
   
-  tags = var.ec2-tags
+  tags = {
+    name=var.instances.[count.index]
+  }
 }
 
 resource "aws_security_group" "allow_all" {

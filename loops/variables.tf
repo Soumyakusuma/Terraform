@@ -50,6 +50,9 @@ variable "type_of_env"{
   default="prod"
 }
 
+variable "instances"{
+  default= ["mongodb", "redis","mysql" , "rabbitmq"]
+}
 
 
 
