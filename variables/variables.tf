@@ -20,6 +20,11 @@ variable "sg_allow"{
 
 }
 
+variable "describe"{
+    default= "allow all ips "
+
+}
+
 variable "from_port"{
     default= 0
 }

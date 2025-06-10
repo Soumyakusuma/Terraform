@@ -10,7 +10,7 @@ resource "aws_instance" "roboshop" {
 
 resource "aws_security_group" "allow_all_ips" {
   name        = var.sg_allow
-  description = var.sg.describe
+  description = var.describe
 
    ingress {
     from_port        =var.from_port
