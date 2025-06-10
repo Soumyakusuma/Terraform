@@ -51,7 +51,7 @@ variable "type_of_env"{
 }
 
 variable "instances"{
-  default= ["mongodb", "redis","mysql" , "rabbitmq"]
+  default= ["mongodb: t3.micro", "redis:t3.small","mysql: t3.small" , "rabbitmq: t3.micro"]
 }
 
 variable "zone_id"{
